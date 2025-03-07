@@ -17,8 +17,11 @@ spec:
         imagePullPolicy: Always
         # command: ["docker", "pull", "--platform", "linux/amd64", "hyo1996/stock-frontend:v.1"]
         resources:
-          limits:
-            memory: "128Mi"
+          requests:
+            memory: "256Mi"   # 요청 메모리
             cpu: "500m"
+          limits:
+            memory: "512Mi"   # 제한 메모리
+            cpu: "1"
         ports:
         - containerPort: 80
