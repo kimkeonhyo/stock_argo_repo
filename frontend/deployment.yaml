@@ -15,7 +15,7 @@ spec:
       - name: frontend
         image: hyo1996/stock-frontend:v.1
         imagePullPolicy: Always
-        command: ["docker", "pull", "--platform", "linux/amd64", "hyo1996/stock-frontend:v.1"]
+        # command: ["docker", "pull", "--platform", "linux/amd64", "hyo1996/stock-frontend:v.1"]
         resources:
           limits:
             memory: "128Mi"
